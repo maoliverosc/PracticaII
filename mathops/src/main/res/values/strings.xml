@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MathOps</string>
+    <string name="app_title">Maths Operations</string>
+    <string name="app_va">Valor A</string>
+    <string name="app_vb">Valor B</string>
+    <string name="app_calc">Calcular</string>
+    <string name="app_sum">Sumar</string>
+    <string name="app_res">Restar</string>
+    <string name="app_mul">Multiplicar</string>
+    <string name="app_div">Dividir</string>
+    <string name="app_resultado">Resultado</string>
+</resources>

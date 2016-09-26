@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Figuras</string>
+    <string name="app_title">Figuras Geometricas</string>
+    <string name="app_cuadro">Cuadrado</string>
+    <string name="app_triangulo">Triangulo</string>
+    <string name="app_rectangulo">Rectangulo</string>
+    <string name="app_circulo">Circulo</string>
+    <string name="app_lado">Lado</string>
+    <string name="app_base">Base</string>
+    <string name="app_altura">Altura</string>
+    <string name="app_radio">Radio</string>
+    <string name="app_calc">Calcular</string>
+</resources>
