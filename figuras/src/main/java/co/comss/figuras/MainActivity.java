@@ -36,11 +36,12 @@ public class MainActivity extends AppCompatActivity {
         tBase = (TextView) findViewById(R.id.tBase);
         tAltura = (TextView) findViewById(R.id.tAltura);
         tRadio = (TextView) findViewById(R.id.tRadio);
+        //
         cuadrado = (RadioButton) findViewById(R.id.rCuadrado);
         triangulo = (RadioButton) findViewById(R.id.rTriangulo);
         rectangulo = (RadioButton) findViewById(R.id.rRectangulo);
         circulo = (RadioButton) findViewById(R.id.rCirculo);
-
+        //
         tLado.setVisibility(View.GONE);
         tBase.setVisibility(View.GONE);
         tAltura.setVisibility(View.GONE);
@@ -114,31 +115,27 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void showCalc(){
-            //int lado = Integer.parseInt(eLado.getText().toString());
-            //int base = Integer.parseInt(eBase.getText().toString());
-            //int altura = Integer.parseInt(eAltura.getText().toString());
-            //int radio = Integer.parseInt(eRadio.getText().toString());
-            int resultado;
-            double areaTriangulo, areaCirculo;
-            tResultado.setText("Igual a: " + 2);
-            /*
 
             if (cuadrado.isChecked()) {
-                resultado = lado*lado;
-                tResultado.setText("Igual a: " + resultado);
+                int lado = Integer.parseInt(eLado.getText().toString());
+                tResultado.setText("Igual a: " + lado*lado);
             }
             if (triangulo.isChecked()) {
-                areaTriangulo = (base*altura)/2;
-                tResultado.setText("Igual a: " + areaTriangulo);
+                int base = Integer.parseInt(eBase.getText().toString());
+                int altura = Integer.parseInt(eAltura.getText().toString());
+                tResultado.setText("Igual a: " + (base*altura)/2);
             }
             if (rectangulo.isChecked()) {
-               resultado = lado*altura;
-               tResultado.setText("Igual a: " + resultado);
+                int lado = Integer.parseInt(eLado.getText().toString());
+                int altura = Integer.parseInt(eAltura.getText().toString());
+               tResultado.setText("Igual a: " + lado*altura);
             }
             if (circulo.isChecked()) {
-                areaCirculo = 3.1416*radio*radio;
+                int radio = Integer.parseInt(eRadio.getText().toString());
+                Double areaCirculo = 3.1416*radio*radio;
                 tResultado.setText("Igual a: " + areaCirculo);
            }
-           */
     }
 }
+
+// End Code..

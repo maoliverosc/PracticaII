@@ -8,20 +8,17 @@
     <string name="form_male">Masculino</string>
     <string name="form_female">Femenino</string>
     <string name="form_nacimiento">Fecha Nacimiento</string>
-    <string name="form_lugar">Lugar Nacimiento</string>
+    <string name="form_lugar">Lugar</string>
     <string name="form_hobby1">Ajedrez</string>
     <string name="form_hobby2">Futbol</string>
     <string name="form_hobby3">Voleyball</string>
     <string name="form_hobby4">Tennis</string>
     <string name="form_acept">Enviar</string>
     <string-array name="ciudades">
-            <item>Mercury</item>
-            <item>Venus</item>
-            <item>Earth</item>
-            <item>Mars</item>
-            <item>Jupiter</item>
-            <item>Saturn</item>
-            <item>Uranus</item>
-            <item>Neptune</item>
+            <item>Medellin</item>
+            <item>Barranquilla</item>
+            <item>Bogota</item>
+            <item>Cali</item>
+            <item>Pereira</item>
     </string-array>
 </resources>

@@ -93,7 +93,8 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
         <RadioButton
             android:id="@+id/rMale"
             android:layout_width="wrap_content"
@@ -110,6 +111,9 @@
             android:textSize="20sp"/>
     </RadioGroup>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <!-- Nacimiento DatePicker -->
     <Button
         android:layout_width="wrap_content"
@@ -118,42 +122,35 @@
         android:onClick="showDatePickerDialog" />
 
     <!-- Nacimiento Lugar -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="@string/form_lugar"
             android:textColor="@color/black"/>
-    </LinearLayout>
     <Spinner
         android:id="@+id/sLugar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <!-- Check boxes -->
-    <CheckBox android:id="@+id/chH1"
+    <CheckBox android:id="@+id/chAjedrez"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/form_hobby1"
-        android:onClick="onCheckboxClicked"/>
-    <CheckBox android:id="@+id/chH2"
+        android:text="@string/form_hobby1" />
+    <CheckBox android:id="@+id/chFutbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/form_hobby2"
-        android:onClick="onCheckboxClicked"/>
-    <CheckBox android:id="@+id/chH3"
+        android:text="@string/form_hobby2"/>
+    <CheckBox android:id="@+id/chVoley"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/form_hobby3"
-        android:onClick="onCheckboxClicked"/>
-    <CheckBox android:id="@+id/chH4"
+        android:text="@string/form_hobby3"/>
+    <CheckBox android:id="@+id/chTennis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/form_hobby4"
-        android:onClick="onCheckboxClicked"/>
+        android:text="@string/form_hobby4"/>
 
     <Button
         android:layout_width="match_parent"

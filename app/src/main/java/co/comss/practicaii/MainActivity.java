@@ -21,13 +21,14 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     // vars
-    private String user, pass, pass2, mail, sex, FNac, hobby;
+    private String user, pass, pass2, mail, sex, FNac, hobby, LNac;
     private static String FN;
+
     //
     TextView tResp;
     EditText eUser, ePass, ePass2, eMail;
     RadioButton rMale, rFemale;
-    CheckBox eH1, eH2, eH3, eH4;
+    CheckBox eA, eF, eV, eT;
     Spinner LN;
     //
     @Override
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ePass = (EditText) findViewById(R.id.ePass);
         ePass2 = (EditText) findViewById(R.id.ePass2);
         eMail = (EditText) findViewById(R.id.eMail);
+        //
+        eA = (CheckBox) findViewById(R.id.chAjedrez);
+        eF = (CheckBox) findViewById(R.id.chFutbol);
+        eV = (CheckBox) findViewById(R.id.chVoley);
+        eT = (CheckBox) findViewById(R.id.chTennis);
+        //
         LN = (Spinner) findViewById(R.id.sLugar);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.ciudades, android.R.layout.simple_spinner_item);
@@ -94,15 +101,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public void onButtonClicked(View v){
+        hobby = "";
         user = eUser.getText().toString();
         pass = ePass.getText().toString();
         pass2 = ePass2.getText().toString();
         mail = eMail.getText().toString();
+
+        if (eA.isChecked())
+            hobby = hobby + "Ajedrez, ";
+        if (eF.isChecked())
+            hobby = hobby + "Futbol, ";
+        if (eV.isChecked())
+            hobby = hobby + "Voleyball, ";
+        if (eT.isChecked())
+            hobby = hobby + "Tennis.";
+
+        LNac = LN.getSelectedItem().toString();
+
         if(pass.equals(pass2))
-            tResp.setText("User: "+user+" Pass: "+pass+" Correo: "+mail+" Sexo: "+sex+" Fecha Nacimiento: "+FN);
+            tResp.setText("User: "+user+", Pass: "+pass+", Correo: "+mail+", Sexo: "+sex+", Fecha Nacimiento: "+FN+", Lugar: "+LNac+", Hobby es: "+hobby);
         else
             Toast.makeText(getApplicationContext(), "Pass NO Coinciden..!", Toast.LENGTH_SHORT).show();
     }
+
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -117,3 +138,4 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 }
 
+// End Code
